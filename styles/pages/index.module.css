@@ -1,0 +1,19 @@
+.homeText{
+  text-align: center;
+}
+.homeText p{
+  margin: 5vh;
+}
+
+.title{
+  font-size: 4em;
+  margin: 10vh 5vh 5vh 5vh;
+}
+
+.loginButton{
+  padding: 10px;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 10px;
+  font-size: 1.3em;
+}

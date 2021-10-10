@@ -1,0 +1,6 @@
+.content{
+    min-height: 80vh;
+    background-color: var(--background);
+    color: var(--black);
+    padding: 10px 1.5em;
+}

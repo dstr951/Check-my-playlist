@@ -1,0 +1,42 @@
+.playlist{
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 30px;
+    grid-column: span 4;
+    padding-right: 20px;
+    cursor:pointer;
+
+}
+.playlist img{
+    border-radius: 50%;
+    border: var(--purple) 5px solid;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+}
+.playlist h4{
+    padding: 5px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.playlist p{
+    text-align: center;
+    align-self: end;
+    margin-left: auto;
+    color: var(--silver);
+    padding-bottom: 3px;
+}
+.playlist:hover img{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+.playlist:hover h4{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px){
+    .playlist{
+        grid-column: span 8;
+    }    
+}

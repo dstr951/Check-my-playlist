@@ -1,7 +1,32 @@
-html,
-body {
+/*variables*/
+:root{
+  --black: #22223B;
+  --white: aliceblue;
+  --background: #E8EEF1;
+  --silver: #C5C5C5;
+  --purple: #712F79;
+  --red: #bd2130;
+  --info: #17a2b8;
+  --success: #28a745; 
+  --green: #1db954;
+}
+
+
+/* reset */
+body, p, a, ul, li, h1, h2, h4 {
+  margin:0;
   padding: 0;
-  margin: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+button {
+  border: 0;
+}
+
+html,
+body {  
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -10,7 +35,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
 
 * {
   box-sizing: border-box;
 }
+

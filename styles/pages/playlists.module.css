@@ -1,0 +1,11 @@
+.playlistList{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+
+    padding-top: 20px;
+}
+
+.headLine {
+    color: var(--purple);
+}

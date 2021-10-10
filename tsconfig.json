@@ -11,6 +11,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "types": ["@types/spotify-api"],
     "isolatedModules": true,
     "jsx": "preserve"
   },
