@@ -40,17 +40,22 @@ const TrackItem: NextPage<Props> = ({ track, primary, playlistLink, accessToken 
 }
 
 import axiosRegular from '../axios/axiosReagular'
-function removeTrackFromPlaylist(track: TrackObjectFull,playlistLink: string, accessToken: string, setDeleteClass: Dispatch<SetStateAction<string>>, setDeleteHref: Dispatch<SetStateAction<string>>){
+function removeTrackFromPlaylist(track: TrackObjectFull, playlistLink: string, accessToken: string, setDeleteClass: Dispatch<SetStateAction<string>>, setDeleteHref: Dispatch<SetStateAction<string>>){
   console.log(track, playlistLink, accessToken);
   setDeleteClass(styles.loading);
   setDeleteHref('/three-dots.svg');
-
+  
   axiosRegular(accessToken).delete(playlistLink, {
-    data:{
-      tracks:[{"uri":track.uri}]
-    }
+    data:createRemoveTrackBodyData(track, playlistLink)
   }).then(() => {setDeleteClass(styles.success);setDeleteHref('/checkmark.svg');})
   console.log("deleted");  
+}
+
+function createRemoveTrackBodyData(track: TrackObjectFull, playlistLink: string){
+  if(playlistLink === 'v1/me/tracks'){
+    return({ids:[track.id]})
+  }
+  return({tracks:[{"uri":track.uri}]})
 }
 
 export default TrackItem;
