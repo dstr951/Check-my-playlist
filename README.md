@@ -1,11 +1,8 @@
 <h4 align="center">  
-  <font size="65" align="center" style="vertical-align: middle;"> 
-  
 
 
-![](public/check.svg)heck ![](public/my.svg)y ![](public/playlist.svg)laylist
+![](public/readmeTitle.svg)
 
-  </font>
 </h4>
 
 This is a website in develpment.

@@ -1,8 +1,0 @@
-<svg width="64" height="64" fill="none" 
-    xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .text{ font: bold 65px sans-serif; fill: #1DB954}
-    </style>
-    <rect width="64" height="64" rx="15" ry="15" fill="#191414"/>
-    <text x="10" y="55" class="text">P</text>
-</svg>
