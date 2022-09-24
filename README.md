@@ -1,5 +1,5 @@
 <h4 align="center">
-![check](public/check.svg) heck My Playlist
+![](public/check.svg)
 </h4>
 
 This is a website in develpment.
