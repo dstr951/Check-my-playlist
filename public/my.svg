@@ -4,5 +4,5 @@
         .text{ font: bold 65px sans-serif; fill: #1DB954}
     </style>
     <rect width="64" height="64" rx="15" ry="15" fill="#191414"/>
-    <text x="7" y="55" class="text">C</text>
+    <text x="4.5" y="55" class="text">M</text>
 </svg>
