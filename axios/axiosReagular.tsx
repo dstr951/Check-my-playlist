@@ -8,6 +8,7 @@ const axiosRegular:(token:string) => AxiosInstance = (token: string) => {
     }) 
     instance.interceptors.response.use((req) =>{return req},(err) => {
         console.log(err)
+        if(!err.response) return Promise.reject(err)
         if(err.response.status === 401) location.replace('/')
         return Promise.reject(err)
     })
