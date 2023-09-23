@@ -33,7 +33,7 @@ const Playlists: NextPage = () => {
     <div className={styles.container}>  
       <Layout>
           <div>
-          <h1>choose a playlist or check <a className={styles.headLine} href={`/check?playlistLink=v1/me/tracks&accessToken=${accessToken.s}`}>your saved tracks</a> </h1> 
+          <h1>choose a playlist</h1> 
           </div>
         
         <div className={styles.playlistList}>
