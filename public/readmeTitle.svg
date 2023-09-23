@@ -1,0 +1,16 @@
+<svg width="600" height="70" fill="none" 
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        .text{ font: bold 65px sans-serif; fill: #1DB954}
+    </style>
+
+    <rect x="0" width="64" height="64" rx="15" ry="15" fill="#191414"/>
+    <text x="7" y="55" class="text">C</text>
+    <text x="64" y="55" class="text">heck</text>
+    <rect x="230" width="64" height="64" rx="15" ry="15" fill="#191414"/>
+    <text x="234.5" y="55" class="text">M</text>
+    <text x="296" y="55" class="text">y</text>
+    <rect x="350" width="64" height="64" rx="15" ry="15" fill="#191414"/>
+    <text x="360" y="55" class="text">P</text>
+    <text x="414" y="55" class="text">laylist</text>
+</svg>
