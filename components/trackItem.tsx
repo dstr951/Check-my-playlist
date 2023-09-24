@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState, Dispatch, SetStateAction } from 'react'
+import { useState, Dispatch, SetStateAction, useEffect } from 'react'
 import { TrackObjectFull } from '../types/spotifyTypes'
 import styles from '../styles/components/trackItem.module.css'
 
@@ -16,6 +16,12 @@ const TrackItem: NextPage<Props> = ({ track, primary, playlistLink, accessToken 
   const [deleteClass, setDeleteClass] = useState(styles.trash) 
   const [deleteHref, setDeleteHref] = useState('/trash.svg');
   const deprecated = track.available_markets?.length === 0
+  //update class and href when track is updated
+  useEffect(()=>{
+	
+	setDeleteClass(styles.trash)
+	setDeleteHref('/trash.svg')
+  }, [track])
   return (    
     <div className={`${styles.track} ${primary?styles.primary:''}`}>        
             <img                          
